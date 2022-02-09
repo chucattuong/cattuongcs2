@@ -1,0 +1,145 @@
+*{
+  padding: 0;
+  margin: 0;
+  word-break: break-all;
+  font-family: 'Open Sans', sans-serif;
+}
+:root{
+  --title-color : #00b14f ;
+  --text-small : 20px ;
+  --text-big : 23px;
+  --text-biger : 35px;
+}
+
+.boxElement{
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow:0px -1px 6px 0px rgb(189 189 189);
+  margin-bottom: 20px;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+i{
+  color: #999;
+  margin-right: 20px;
+  font-size: 17px;
+}
+body{
+  background-color: #bdf7d7;
+  font-size: var(--text-small);
+}
+.wrapper{
+  padding: 30px;
+  width: 1400px;
+  margin: 0 auto;
+}
+/* header */
+.header{
+  display: flex;
+  flex-direction: row;
+}
+.avt{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avt img{
+  width: 50%;
+  max-width: 200px;
+  border-radius: 100%;
+}
+.about{
+  padding: 30px;
+  width: 100%;
+}
+.about h1{
+  color: var(--title-color);
+  font-size: var(--text-biger);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.about > p{
+  color: var(--title-color);
+  font-size: var(--text-big);
+  margin-bottom: 10px;
+}
+.aboutDetails{
+  display: flex;
+  line-height: 40px;
+  color: rgb(66, 66, 66);
+}
+.aboutDetails .aboutMe{
+  width: 50%;
+}
+/* end header */
+/* content */
+.content{
+  display: flex;
+}
+.leftContent{
+  width: 50%;
+  margin-right: 10px;
+}
+.boxContent .title{
+  height: 30px;
+  border-bottom: 2px solid rgb(206, 206, 206);
+  padding: 20px;
+}
+.boxContent .title h1{
+  font-size: var(--text-big);
+  color: var(--title-color);
+  font-weight: 600;
+}
+.boxContent .title h1 > i{
+  font-size: var(--text-big);
+  color: var(--title-color);
+}
+.boxContent .titleDetail{
+  padding: 20px;
+}
+.boxContent .titleDetail h1{
+  font-size: var(--text-small);
+  color: var(--title-color);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.boxContent .titleDetail .detail{
+  display: flex;
+  margin-bottom: 20px;
+}
+.boxContent .titleDetail .detail p{
+  width: 50%;
+  word-break: normal;
+}
+.boxContent .titleDetail .detail span{
+  word-break: normal;
+}
+.boxContent .titleDetail .detail p:nth-child(2){
+  background-color: #cff7e1;
+  color: var(--title-color);
+  font-weight: 300;
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  width: 40%;
+  max-width: 250px;
+  border-radius: 25px;
+  max-height: 25px;
+
+}
+.boxContent .titleDetail .progress{
+  color: rgb(88, 88, 88);
+}
+.boxContent .titleDetail .progress {
+  line-height: 30px;
+}
+.rightContent{
+  width: 50%;
+  margin-left: 10px;
+}
+
+/* end content */
